@@ -4,6 +4,7 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import constant.Constant;
 import elementRepository.HomePage;
 import elementRepository.LoginPage;
 
@@ -30,7 +31,7 @@ public class LoginPageTest extends BaseClass{
 	  lp.sendLoginDetails("admin","admin");
 	  String actual = hp.getHomePageText();
 	  String expected = "7rmart supermarket";
-	  Assert.assertEquals(actual, expected, "Sign in text not as expected");//Assertion is used to compare the values(actual == expected)
+	  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithValidData);//Assertion is used to compare the values(actual == expected)
   }
   
   @Test(dataProvider = "invalidLoginData")

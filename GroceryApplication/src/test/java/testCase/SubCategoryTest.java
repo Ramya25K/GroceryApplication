@@ -30,10 +30,8 @@ public class SubCategoryTest extends BaseClass {
 		catName = sc.selectCategoryText(); // Click and select the text from Subcategory Page
 		subCatName = sc.enterSubCategoryDetails(); // Enter the text in subcategory column in subcategory page
 		sc.clickOnSaveButton();
-
 		boolean actualFailure = sc.getAlertFailureText(); // Get the failure alert text
 		assertEquals(actualFailure, false, "Subcategory already exists-Select other");
-		
 		hp.clickOnSubCategoryButton();
 		String actualSubCatName = sc.readSubCategoryTableElement(1, 1);
 		String expectedSubCatName = subCatName;

@@ -1,0 +1,17 @@
+<suite name="GroceryApplication" parallel="tests" thread-count="2" >
+	<test name="ChromeTest">
+		<parameter name = "browser" value = "Chrome"></parameter>
+		<classes>
+			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.SubCategoryTest"></class>
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<parameter name = "browser" value = "firefox"></parameter>
+		<classes>
+			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.SubCategoryTest"></class>
+		</classes>
+	</test>
+	
+</suite>

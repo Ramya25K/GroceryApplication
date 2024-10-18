@@ -3,12 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCase.SubCategoryTest">
+      <class name="testCase.LoginPageTest">
         <methods>
-          <include name="verifyNewSubCategory"/>
+          <include name="verifyLoginWithInvalidData"/>
           <include name="beforeMethod"/>
+          <include name="verifyLoginWithValidData"/>
         </methods>
-      </class> <!-- testCase.SubCategoryTest -->
+      </class> <!-- testCase.LoginPageTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
