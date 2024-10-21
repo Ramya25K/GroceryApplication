@@ -1,13 +1,19 @@
 package elementRepository;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import utilities.ExcelUtility;
+import utilities.GeneralUtility;
 
 public class LoginPage {
 
 	WebDriver driver;
+	 ExcelUtility eu = new ExcelUtility(); // Create an instance of ExcelUtilities
+	 GeneralUtility gu = new GeneralUtility();
 	
 	public LoginPage(WebDriver driver)
 	{
@@ -25,9 +31,9 @@ public class LoginPage {
 	
 	public void sendLoginDetails(String userName, String password)
 	{
-		userNameField.sendKeys(userName);
-		passwordField.sendKeys(password);
-		signInButton.click();
+		gu.enterText(userNameField, userName);
+		gu.enterText(passwordField,password);
+		gu.clickOnElement(signInButton);
 	}
 	
 	public String getAlertText() 
@@ -35,6 +41,15 @@ public class LoginPage {
 		return alertText.getText();
 	}
 
+	public void loginUsingExcel() throws IOException
+	{
+		String username = eu.getStringData(1, 0, "Sheet1");
+		gu.enterText(userNameField, username);
+
+	     String password = eu.getStringData(1, 1, "Sheet1");
+	     gu.enterText(passwordField,password);
+	     gu.clickOnElement(signInButton);
+	}
 	
 	
 }

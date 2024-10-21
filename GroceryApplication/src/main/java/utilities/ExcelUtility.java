@@ -15,8 +15,8 @@ public class ExcelUtility {
 	public static FileInputStream f;// f Object to open and read the file input stream ( Reads the actual Excel file
 									// from the file system.)
 
-	public static String getStringData(int i, int j, String filepath, String sheet) throws IOException {
-		f = new FileInputStream(System.getProperty("user.dir") + filepath);// +is concatenate to get files from our path
+	public static String getStringData(int i, int j, String sheet) throws IOException {
+		f = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\LoginData.xlsx");// +is concatenate to get files from our path
 		wb = new XSSFWorkbook(f);
 		sh = wb.getSheet(sheet);
 		Row r = sh.getRow(i);
@@ -24,8 +24,8 @@ public class ExcelUtility {
 		return c.getStringCellValue();
 	}
 
-	public static String getIntegerData(int i, int j, String filepath, String sheet) throws IOException {
-		f = new FileInputStream(System.getProperty("user.dir") + filepath);// +is concatenate to get files from our path
+	public static String getIntegerData(int i, int j, String sheet) throws IOException {
+		f = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\LoginData.xlsx");// +is concatenate to get files from our path
 		wb = new XSSFWorkbook(f);
 		sh = wb.getSheet(sheet);
 		Row r = sh.getRow(i);
@@ -34,8 +34,8 @@ public class ExcelUtility {
 		return String.valueOf(value);
 	}
 
-	public static ArrayList<String> getString(String filepath, String sheet, int rowno) throws IOException {
-		f = new FileInputStream(System.getProperty("user.dir") + filepath);
+	public static ArrayList<String> getString(String sheet, int rowno) throws IOException {
+		f = new FileInputStream(System.getProperty("user.dir") + "\\src\\main\\resources\\LoginData.xlsx");
 		wb = new XSSFWorkbook(f);
 		sh = wb.getSheet(sheet);
 		ArrayList<String> excelRows = new ArrayList<String>();

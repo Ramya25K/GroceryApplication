@@ -26,25 +26,13 @@ public class LoginPageTest extends BaseClass{
         };
     }
 	
-	@DataProvider(name = "validLoginData")
-    public Object[][] validLoginData() throws IOException {
-        String filepath = "/src/main/resources/LoginData.xlsx"; // Path to Excel file
-        String sheetName = "Sheet1"; // Name of sheet 
-        Object[][] data = new Object[1][2]; // 2 columns for username and password
-
-        // Read data from the second row (index 1)
-        data[0][0] = ExcelUtility.getStringData(1, 0, filepath, sheetName); // Username from A2
-        data[0][1] = ExcelUtility.getStringData(1, 1, filepath, sheetName); // Password from B2
-
-        return data;
-    }
 	
-	 @Test(dataProvider = "validLoginData")
-  public void verifyLoginWithValidData(String username,String password) 
+	 @Test
+  public void verifyLoginWithValidData() throws IOException 
   {
 	  lp = new LoginPage(driver);
 	  hp = new HomePage(driver);
-	  lp.sendLoginDetails(username,password);
+	  lp.loginUsingExcel(); // calling loginUsingExcel Function in LoginPage
 	  String actual = hp.getHomePageText();
 	  String expected = "7rmart supermarket";
 	  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithValidData);//Assertion is used to compare the values(actual == expected)
