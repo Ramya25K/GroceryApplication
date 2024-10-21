@@ -6,6 +6,7 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
+import constant.Constant;
 import elementRepository.HomePage;
 import elementRepository.LoginPage;
 import elementRepository.SubCategory;
@@ -31,11 +32,11 @@ public class SubCategoryTest extends BaseClass {
 		subCatName = sc.enterSubCategoryDetails(); // Enter the text in subcategory column in subcategory page
 		sc.clickOnSaveButton();
 		boolean actualFailure = sc.getAlertFailureText(); // Get the failure alert text
-		assertEquals(actualFailure, false, "Subcategory already exists-Select other");
+		assertEquals(actualFailure, false, Constant.sc_verifyNewSubcategoryAlert);
 		hp.clickOnSubCategoryButton();
 		String actualSubCatName = sc.readSubCategoryTableElement(1, 1);
 		String expectedSubCatName = subCatName;
-		assertEquals(actualSubCatName, expectedSubCatName, "Subcategory is not as expected");
+		assertEquals(actualSubCatName, expectedSubCatName, Constant.sc_verifyNewSubcategory);
 	}
 	
 	
@@ -63,7 +64,7 @@ public class SubCategoryTest extends BaseClass {
 		// Searching for the updated subcatgory name
 		sc.searchSubCatAfterUpdate(oldCatText, updatedSubCatgorytext);
 		boolean searchMessage = sc.searchSubCatBeforeUpdateValue(oldCatText, oldSubCatText);
-		assertEquals(searchMessage, true, "Result not found");
+		assertEquals(searchMessage, true, Constant.sc_verifyEditSubcategory);
 
 	}
 	
@@ -79,7 +80,7 @@ public class SubCategoryTest extends BaseClass {
 		boolean deletemessage= sc.deleteCatgoryRow(); //click on delete button
 		sc.searchSubCatAfterUpdate(beforeDelCatName, beforeDelSubCatName);
 		boolean delMessageValue = sc.resultNotFoundMessage();
-		Assert.assertEquals(delMessageValue, true,"Result not found");
+		Assert.assertEquals(delMessageValue, true,Constant.sc_verifyEditSubcategory);
 		
 		
 	}
