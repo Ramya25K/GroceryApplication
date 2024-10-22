@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,22 +103,17 @@
                     <div class="method-list-content passed suite-GroceryApplication">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-GroceryApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidData(adminss, admin)">verifyLoginWithInvalidData(adminss, admin)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-GroceryApplication" title="testCase.ManageNewsPageTest" class="method navigator-link" hash-for-method="addNewsInformation">addNewsInformation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-GroceryApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidData(adminss, adminss)">verifyLoginWithInvalidData(adminss, adminss)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-GroceryApplication" title="testCase.ManageNewsPageTest" class="method navigator-link" hash-for-method="deleteNewsInformation">deleteNewsInformation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-GroceryApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithInvalidData(admin, adminss)">verifyLoginWithInvalidData(admin, adminss)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-GroceryApplication" title="testCase.LoginPageTest" class="method navigator-link" hash-for-method="verifyLoginWithValidData">verifyLoginWithValidData</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-GroceryApplication" title="testCase.ManageNewsPageTest" class="method navigator-link" hash-for-method="editNewsInformation">editNewsInformation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-GroceryApplication -->
@@ -136,38 +131,28 @@
           <div class="suite-GroceryApplication-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">testCase.LoginPageTest</span>
+              <span class="class-name">testCase.ManageNewsPageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginWithInvalidData(adminss, admin)">
-                  </a> <!-- verifyLoginWithInvalidData(adminss, admin) -->
-                  <span class="method-name">verifyLoginWithInvalidData</span>
-                  <span class="parameters">(adminss,admin)</span>
+                  <a name="addNewsInformation">
+                  </a> <!-- addNewsInformation -->
+                  <span class="method-name">addNewsInformation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginWithInvalidData(adminss, adminss)">
-                  </a> <!-- verifyLoginWithInvalidData(adminss, adminss) -->
-                  <span class="method-name">verifyLoginWithInvalidData</span>
-                  <span class="parameters">(adminss,adminss)</span>
+                  <a name="deleteNewsInformation">
+                  </a> <!-- deleteNewsInformation -->
+                  <span class="method-name">deleteNewsInformation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyLoginWithInvalidData(admin, adminss)">
-                  </a> <!-- verifyLoginWithInvalidData(admin, adminss) -->
-                  <span class="method-name">verifyLoginWithInvalidData</span>
-                  <span class="parameters">(admin,adminss)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="verifyLoginWithValidData">
-                  </a> <!-- verifyLoginWithValidData -->
-                  <span class="method-name">verifyLoginWithValidData</span>
+                  <a name="editNewsInformation">
+                  </a> <!-- editNewsInformation -->
+                  <span class="method-name">editNewsInformation</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,7 +170,7 @@
   &lt;test thread-count=&quot;2&quot; parallel=&quot;tests&quot; name=&quot;ChromeTest&quot;&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;Chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testCase.LoginPageTest&quot;/&gt;
+      &lt;class name=&quot;testCase.ManageNewsPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTest --&gt;
 &lt;/suite&gt; &lt;!-- GroceryApplication --&gt;
@@ -225,28 +210,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyLoginWithValidData')
-data.setCell(0, 2, 'testCase.LoginPageTest')
-data.setCell(0, 3, 1946);
+data.setCell(0, 1, 'editNewsInformation')
+data.setCell(0, 2, 'testCase.ManageNewsPageTest')
+data.setCell(0, 3, 2981);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyLoginWithInvalidData')
-data.setCell(1, 2, 'testCase.LoginPageTest')
-data.setCell(1, 3, 936);
+data.setCell(1, 1, 'deleteNewsInformation')
+data.setCell(1, 2, 'testCase.ManageNewsPageTest')
+data.setCell(1, 3, 2902);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'verifyLoginWithInvalidData')
-data.setCell(2, 2, 'testCase.LoginPageTest')
-data.setCell(2, 3, 712);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'verifyLoginWithInvalidData')
-data.setCell(3, 2, 'testCase.LoginPageTest')
-data.setCell(3, 3, 426);
+data.setCell(2, 1, 'addNewsInformation')
+data.setCell(2, 2, 'testCase.ManageNewsPageTest')
+data.setCell(2, 3, 2886);
 window.suiteTableData['GroceryApplication']= { tableData: data, tableDiv: 'times-div-GroceryApplication'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 32 seconds</span>
+              <span class="suite-total-time">Total running time: 24 seconds</span>
               <div id="times-div-GroceryApplication">
               </div> <!-- times-div-GroceryApplication -->
             </div> <!-- times-div -->
@@ -272,39 +253,43 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testCase.LoginPageTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testCase.ManageNewsPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(Chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLoginWithInvalidData(admin, adminss)</span>
-                <span class="method-start">5991 ms</span>
+                <span class="method-name">addNewsInformation</span>
+                <span class="method-start">5303 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=addNewsInformation status=SUCCESS method=ManageNewsPageTest.addNewsInformation()[pr...)</span>
+                <span class="method-start">8192 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(Chrome)</span>
-                <span class="method-start">6930 ms</span>
+                <span class="method-start">8196 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLoginWithInvalidData(adminss, admin)</span>
-                <span class="method-start">12661 ms</span>
+                <span class="method-name">deleteNewsInformation</span>
+                <span class="method-start">13137 ms</span>
               </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=deleteNewsInformation status=SUCCESS method=ManageNewsPageTest.deleteNewsInformatio...)</span>
+                <span class="method-start">16040 ms</span>
+              </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(Chrome)</span>
-                <span class="method-start">13374 ms</span>
+                <span class="method-start">16042 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">verifyLoginWithInvalidData(adminss, adminss)</span>
-                <span class="method-start">22566 ms</span>
+                <span class="method-name">editNewsInformation</span>
+                <span class="method-start">21146 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-method before">
-                <span class="method-name">beforeMethod(Chrome)</span>
-                <span class="method-start">22995 ms</span>
-              </div> <!-- configuration-method before -->
-              <div class="test-method">
-                <span class="method-name">verifyLoginWithValidData</span>
-                <span class="method-start">30837 ms</span>
-              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">afterMethode([TestResult name=editNewsInformation status=SUCCESS method=ManageNewsPageTest.editNewsInformation()[...)</span>
+                <span class="method-start">24128 ms</span>
+              </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
+<testng-results ignored="0" total="3" passed="3" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-21T15:04:28 IST" name="GroceryApplication" finished-at="2024-10-21T15:05:01 IST" duration-ms="32827">
+  <suite started-at="2024-10-22T19:17:21 IST" name="GroceryApplication" finished-at="2024-10-22T19:17:45 IST" duration-ms="24169">
     <groups>
     </groups>
-    <test started-at="2024-10-21T15:04:28 IST" name="ChromeTest" finished-at="2024-10-21T15:05:01 IST" duration-ms="32827">
-      <class name="testCase.LoginPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:28 IST" name="beforeMethod" finished-at="2024-10-21T15:04:34 IST" duration-ms="5990" status="PASS">
+    <test started-at="2024-10-22T19:17:21 IST" name="ChromeTest" finished-at="2024-10-22T19:17:45 IST" duration-ms="24169">
+      <class name="testCase.ManageNewsPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:21 IST" name="beforeMethod" finished-at="2024-10-22T19:17:26 IST" duration-ms="5301" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,50 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithInvalidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:34 IST" name="verifyLoginWithInvalidData" data-provider="invalidLoginData" finished-at="2024-10-21T15:04:35 IST" duration-ms="936" status="PASS">
+        <test-method signature="addNewsInformation()[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:26 IST" name="addNewsInformation" finished-at="2024-10-22T19:17:29 IST" duration-ms="2886" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addNewsInformation -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:29 IST" name="afterMethode" finished-at="2024-10-22T19:17:29 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adminss]]>
+                <![CDATA[[TestResult name=addNewsInformation status=SUCCESS method=ManageNewsPageTest.addNewsInformation()[pri:0, instance:testCase.ManageNewsPageTest@3012646b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidData -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:35 IST" name="beforeMethod" finished-at="2024-10-21T15:04:41 IST" duration-ms="5731" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithInvalidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:41 IST" name="verifyLoginWithInvalidData" data-provider="invalidLoginData" finished-at="2024-10-21T15:04:42 IST" duration-ms="712" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[adminss]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[admin]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidData -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:42 IST" name="beforeMethod" finished-at="2024-10-21T15:04:51 IST" duration-ms="9192" status="PASS">
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:29 IST" name="beforeMethod" finished-at="2024-10-22T19:17:34 IST" duration-ms="4939" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -72,23 +44,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithInvalidData(java.lang.String,java.lang.String)[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:51 IST" name="verifyLoginWithInvalidData" data-provider="invalidLoginData" finished-at="2024-10-21T15:04:51 IST" duration-ms="426" status="PASS">
+        <test-method signature="deleteNewsInformation()[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:34 IST" name="deleteNewsInformation" finished-at="2024-10-22T19:17:37 IST" duration-ms="2902" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deleteNewsInformation -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:37 IST" name="afterMethode" finished-at="2024-10-22T19:17:37 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[adminss]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[adminss]]>
+                <![CDATA[[TestResult name=deleteNewsInformation status=SUCCESS method=ManageNewsPageTest.deleteNewsInformation()[pri:0, instance:testCase.ManageNewsPageTest@3012646b] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithInvalidData -->
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:51 IST" name="beforeMethod" finished-at="2024-10-21T15:04:59 IST" duration-ms="7842" status="PASS">
+        </test-method> <!-- afterMethode -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:37 IST" name="beforeMethod" finished-at="2024-10-22T19:17:42 IST" duration-ms="5104" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -99,11 +70,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@6574a52c]" started-at="2024-10-21T15:04:59 IST" name="verifyLoginWithValidData" finished-at="2024-10-21T15:05:01 IST" duration-ms="1946" status="PASS">
+        <test-method signature="editNewsInformation()[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:42 IST" name="editNewsInformation" finished-at="2024-10-22T19:17:45 IST" duration-ms="2981" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyLoginWithValidData -->
-      </class> <!-- testCase.LoginPageTest -->
+        </test-method> <!-- editNewsInformation -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.ManageNewsPageTest@3012646b]" started-at="2024-10-22T19:17:45 IST" name="afterMethode" finished-at="2024-10-22T19:17:45 IST" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=editNewsInformation status=SUCCESS method=ManageNewsPageTest.editNewsInformation()[pri:0, instance:testCase.ManageNewsPageTest@3012646b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.ManageNewsPageTest -->
     </test> <!-- ChromeTest -->
   </suite> <!-- GroceryApplication -->
 </testng-results>

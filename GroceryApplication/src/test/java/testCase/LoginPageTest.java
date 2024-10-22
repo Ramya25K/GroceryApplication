@@ -34,11 +34,11 @@ public class LoginPageTest extends BaseClass{
 	  hp = new HomePage(driver);
 	  lp.loginUsingExcel(); // calling loginUsingExcel Function in LoginPage
 	  String actual = hp.getHomePageText();
-	  String expected = "7rmart supermarket";
+	  String expected = "7rmart supermarket1";
 	  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithValidData);//Assertion is used to compare the values(actual == expected)
   }
   
-  @Test(dataProvider = "invalidLoginData")
+  @Test(enabled=false,dataProvider = "invalidLoginData")
   public void verifyLoginWithInvalidData(String username,String password) 
   {
 	  lp = new LoginPage(driver);

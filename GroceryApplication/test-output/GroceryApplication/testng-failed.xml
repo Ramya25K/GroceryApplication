@@ -4,12 +4,13 @@
   <test thread-count="2" parallel="tests" name="ChromeTest(failed)">
     <parameter name="browser" value="Chrome"/>
     <classes>
-      <class name="testCase.LoginPageTest">
+      <class name="testCase.ManageNewsPageTest">
         <methods>
+          <include name="editNewsInformation"/>
+          <include name="afterMethode"/>
           <include name="beforeMethod"/>
-          <include name="verifyLoginWithValidData"/>
         </methods>
-      </class> <!-- testCase.LoginPageTest -->
+      </class> <!-- testCase.ManageNewsPageTest -->
     </classes>
   </test> <!-- ChromeTest(failed) -->
 </suite> <!-- Failed suite [GroceryApplication] -->
