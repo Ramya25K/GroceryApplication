@@ -98,7 +98,7 @@ public class GeneralUtility {
 
 	public void scrollBy(WebDriver driver) {
 		JavascriptExecutor executor1 = (JavascriptExecutor) driver;
-		executor1.executeScript("window.scrollBy(1000)");
+		executor1.executeScript("window.scrollBy(0,1000)");
 
 	}
 	public int randon(int limit) {
@@ -111,6 +111,19 @@ public class GeneralUtility {
 		Date date = new Date();
 		SimpleDateFormat formatter = new SimpleDateFormat("ddMMyyhhmmss");
 		return formatter.format(date);
+	}
+	
+	public void scrollToBottom(WebDriver driver) {
+	    JavascriptExecutor executor = (JavascriptExecutor) driver;
+	    executor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+	}
+	public void scrollToElement(WebDriver driver, WebElement element) {
+	    JavascriptExecutor executor = (JavascriptExecutor) driver;
+	    executor.executeScript("arguments[0].scrollIntoView(true);", element);
+	}
+	public void clickUsingJavaScript(WebDriver driver, WebElement element) {
+	    JavascriptExecutor executor = (JavascriptExecutor) driver;
+	    executor.executeScript("arguments[0].click();", element);
 	}
 
 }

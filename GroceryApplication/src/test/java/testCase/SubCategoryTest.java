@@ -22,10 +22,8 @@ public class SubCategoryTest extends BaseClass {
 	@Test
 	public void verifyNewSubCategory() {
 		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		sc = new SubCategory(driver);
-		lp.sendLoginDetails("admin", "admin");
-		hp.clickOnSubCategoryButton(); // Click on subcategory button on homepage
+		hp=lp.sendLoginDetails("admin", "admin");
+		sc=hp.clickOnSubCategoryButton(); // Click on subcategory button on homepage
 		sc.addNewSubCategory(); // Click on New button on Subcategory Page
 		sc.selectCategoryDropDown(); // Click on Select Category from SubCategory Page
 		catName = sc.selectCategoryText(); // Click and select the text from Subcategory Page

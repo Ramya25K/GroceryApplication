@@ -29,11 +29,12 @@ public class LoginPage {
 	@FindBy(xpath ="//div[@class='alert alert-danger alert-dismissible']//child::h5")
 	WebElement alertText;
 	
-	public void sendLoginDetails(String userName, String password)
+	public HomePage sendLoginDetails(String userName, String password)
 	{
 		gu.enterText(userNameField, userName);
 		gu.enterText(passwordField,password);
 		gu.clickOnElement(signInButton);
+		return new HomePage(driver); //for chaining of pages
 	}
 	
 	public String getAlertText() 
@@ -41,7 +42,7 @@ public class LoginPage {
 		return alertText.getText();
 	}
 
-	public void loginUsingExcel() throws IOException
+	public HomePage loginUsingExcel() throws IOException
 	{
 		String username = eu.getStringData(1, 0, "Sheet1");
 		gu.enterText(userNameField, username);
@@ -49,6 +50,7 @@ public class LoginPage {
 	     String password = eu.getStringData(1, 1, "Sheet1");
 	     gu.enterText(passwordField,password);
 	     gu.clickOnElement(signInButton);
+	     return new HomePage(driver); //for chaining of pages(calling hp constructor)
 	}
 	
 	

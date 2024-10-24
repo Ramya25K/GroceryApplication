@@ -17,7 +17,6 @@ public class ManageNewsPageTest extends BaseClass {
 	LoginPage lp;
 	HomePage hp;
 	ManageNewsPage mn;
-	WaitUtilities wu;
 	
   @Test
   public void addNewsInformation() throws IOException {

@@ -14,7 +14,6 @@ import utilities.ExcelUtility;
 public class LoginPageTest extends BaseClass{
 	LoginPage lp;
 	HomePage hp;
-
 	
 	
 	@DataProvider(name = "invalidLoginData")
@@ -31,10 +30,9 @@ public class LoginPageTest extends BaseClass{
   public void verifyLoginWithValidData() throws IOException 
   {
 	  lp = new LoginPage(driver);
-	  hp = new HomePage(driver);
-	  lp.loginUsingExcel(); // calling loginUsingExcel Function in LoginPage
+	  hp= lp.loginUsingExcel(); // calling loginUsingExcel Function in LoginPage
 	  String actual = hp.getHomePageText();
-	  String expected = "7rmart supermarket1";
+	  String expected = "7rmart supermarket";
 	  Assert.assertEquals(actual, expected, Constant.lp_verifyLoginWithValidData);//Assertion is used to compare the values(actual == expected)
   }
   
