@@ -22,8 +22,8 @@ public class SubCategoryTest extends BaseClass {
 	@Test
 	public void verifyNewSubCategory() {
 		lp = new LoginPage(driver);
-		hp=lp.sendLoginDetails("admin", "admin");
-		sc=hp.clickOnSubCategoryButton(); // Click on subcategory button on homepage
+		hp = lp.sendLoginDetails("admin", "admin");
+		sc = hp.clickOnSubCategoryButton(); // Click on subcategory button on homepage
 		sc.addNewSubCategory(); // Click on New button on Subcategory Page
 		sc.selectCategoryDropDown(); // Click on Select Category from SubCategory Page
 		catName = sc.selectCategoryText(); // Click and select the text from Subcategory Page
@@ -36,15 +36,12 @@ public class SubCategoryTest extends BaseClass {
 		String expectedSubCatName = subCatName;
 		assertEquals(actualSubCatName, expectedSubCatName, Constant.sc_verifyNewSubcategory);
 	}
-	
-	
+
 	@Test
 	public void verifyEditSubCategory() {
 		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		sc = new SubCategory(driver);
-		lp.sendLoginDetails("admin", "admin");
-		hp.clickOnSubCategoryButton();
+		hp = lp.sendLoginDetails("admin", "admin");
+		sc = hp.clickOnSubCategoryButton();
 		String oldSubCatText = sc.newSubCatgoryText(); // copying the added subcatgory value before edit
 		String oldCatText = sc.newCatgoryText(); // // copying the added catgory value before edit
 		sc.clickOnEditButton();// click on edit button
@@ -65,21 +62,19 @@ public class SubCategoryTest extends BaseClass {
 		assertEquals(searchMessage, true, Constant.sc_verifyEditSubcategory);
 
 	}
-	
+
 	@Test
 	public void verifyDeleteSubCatgory() {
 		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		sc = new SubCategory(driver);
-		lp.sendLoginDetails("admin", "admin");
-		hp.clickOnSubCategoryButton();
-		String beforeDelCatName = sc.newCatgoryText();//copying the catgory name before delete
-		String beforeDelSubCatName =sc.newSubCatgoryText(); //copying the subcatgory name before delete
-		boolean deletemessage= sc.deleteCatgoryRow(); //click on delete button
+		hp = lp.sendLoginDetails("admin", "admin");
+		sc = hp.clickOnSubCategoryButton();
+		String beforeDelCatName = sc.newCatgoryText();// copying the catgory name before delete
+		String beforeDelSubCatName = sc.newSubCatgoryText(); // copying the subcatgory name before delete
+		boolean deletemessage = sc.deleteCatgoryRow(); // click on delete button
 		sc.searchSubCatAfterUpdate(beforeDelCatName, beforeDelSubCatName);
 		boolean delMessageValue = sc.resultNotFoundMessage();
-		Assert.assertEquals(delMessageValue, true,Constant.sc_verifyEditSubcategory);
-		
-		
+		Assert.assertEquals(delMessageValue, true, Constant.sc_verifyEditSubcategory);
+	
+
 	}
 }

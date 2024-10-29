@@ -35,15 +35,18 @@ public class HomePage {
 		return new SubCategory(driver);
 	}
 
-	public void clickOnCategoryTab() {
+	public CategoryPage clickOnCategoryTab() {
 		gu.clickOnElement(categoryTab);
+		return new CategoryPage(driver);
 	}
 
-	public void clickOnManageContactTab() {
+	public ManageContactPage clickOnManageContactTab() {
 		gu.clickOnElement(manageContactTab);
+		return new ManageContactPage(driver);
 	}
 
-	public void clickOnManageNewsTab() {
+	public ManageNewsPage clickOnManageNewsTab() {
 		gu.clickOnElement(manageNewsTab);
+		return new ManageNewsPage(driver);
 	}
 }

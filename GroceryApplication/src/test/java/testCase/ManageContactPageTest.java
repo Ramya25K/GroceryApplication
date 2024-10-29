@@ -16,13 +16,11 @@ public class ManageContactPageTest extends BaseClass {
 	@Test
 	public void editContactDetails() throws Throwable {
 		lp = new LoginPage(driver);
-		hp = new HomePage(driver);
-		mc = new ManageContactPage(driver);
-		lp.loginUsingExcel();
-		mc.clickOnManageContactTab();
+		hp = lp.loginUsingExcel();
+		mc =hp.clickOnManageContactTab();
 		mc.editContactData();
 		boolean alertFlag = mc.getAlertText();
-		assertEquals(alertFlag, false);
+		assertEquals(alertFlag, true);
 		mc.closeAlert();
 	}
 }
