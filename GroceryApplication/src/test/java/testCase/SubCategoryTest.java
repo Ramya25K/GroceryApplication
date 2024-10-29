@@ -45,10 +45,8 @@ public class SubCategoryTest extends BaseClass {
 		String oldSubCatText = sc.newSubCatgoryText(); // copying the added subcatgory value before edit
 		String oldCatText = sc.newCatgoryText(); // // copying the added catgory value before edit
 		sc.clickOnEditButton();// click on edit button
-		System.out.println("Before Edit=" + oldSubCatText);
 		String newSubCatText = sc.editSubCategoryDetails("Red");// updating the value of subcategory
 		sc.clickOnUpdateButton(); // click on update button
-		System.out.println("After Edit=" + newSubCatText);
 		boolean actualAlertMessage = sc.updatedAlertMessage();
 		assertEquals(actualAlertMessage, true);
 
@@ -74,7 +72,6 @@ public class SubCategoryTest extends BaseClass {
 		sc.searchSubCatAfterUpdate(beforeDelCatName, beforeDelSubCatName);
 		boolean delMessageValue = sc.resultNotFoundMessage();
 		Assert.assertEquals(delMessageValue, true, Constant.sc_verifyEditSubcategory);
-	
 
 	}
 }
