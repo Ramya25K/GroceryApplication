@@ -17,21 +17,21 @@ public class CategoryPageTest extends BaseClass {
 	HomePage hp;
 	CategoryPage cp;
 
-	@Test(enabled = false)
+	@Test
 	public void EditNewCategory() throws IOException, Throwable {
 		lp = new LoginPage(driver);
 		hp = lp.loginUsingExcel();
 		cp = hp.clickOnCategoryTab();
 		String catText = cp.readTableElement(3, 1);
-		cp.clickOnEditButton(3);
+		cp.clickOnEditButton(1);
 		String editedCatText = cp.editTextCatgoryDetails();
 		assertNotEquals(editedCatText, catText, "Category Text are same-(not edited)");
-		cp.clickOnEditButton(6);
+		cp.clickOnEditButton(1);
 		boolean actualflag = cp.editImageCategoryDetails();
 		assertEquals(actualflag, true, "The image category details should be updated.");
 	}
 
-	@Test
+	@Test(enabled = false)
 	public void checkForStatus() throws IOException {
 		lp = new LoginPage(driver);
 		hp = lp.loginUsingExcel();

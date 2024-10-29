@@ -75,7 +75,7 @@ public class CategoryPage {
 		driver.switchTo().alert().accept();
 		Thread.sleep(2000);
 		gu.scrollToBottom(driver);
-		String filePath = "C:\\Users\\User\\Desktop\\Test.png";
+		String filePath = "C:\\Users\\User\\Desktop\\Books.jpg";
 		gu.enterText(chooseFileButton, filePath);
 		gu.clickUsingJavaScript(driver, updateButton);
 		boolean flag = alertText.getText().contains("Category Updated Successfully");
