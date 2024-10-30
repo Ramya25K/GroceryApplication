@@ -1,0 +1,35 @@
+<suite name="GroceryApplication" parallel="tests" thread-count="2" >
+	<test name="ChromeTest">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<listeners>
+			<listener class-name="utilities.ExtenetReport"/>
+			<listener class-name="utilities.RetryListener"/>
+		</listeners>
+		<parameter name = "browser" value = "Chrome"></parameter>
+		<classes>
+			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.SubCategoryTest"></class>
+		</classes>
+	</test>
+	<test name="FirefoxTest">
+		<groups>
+			<run>
+				<include name="smoke"></include>
+			</run>
+		</groups>
+		<listeners>
+			<listener class-name="utilities.ExtenetReport"/>
+			<listener class-name="utilities.RetryListener"/>
+		</listeners>
+		<parameter name = "browser" value = "firefox"></parameter>
+		<classes>
+			<class name="testCase.LoginPageTest"></class>
+			<class name="testCase.SubCategoryTest"></class>
+		</classes>
+	</test>
+	
+</suite>
