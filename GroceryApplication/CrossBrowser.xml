@@ -1,7 +1,7 @@
 <suite name="GroceryApplication" parallel="tests" thread-count="2" >
 	<test name="ChromeTest">
 		<listeners>
-			<listener class-name="utilities.ExtentReport"/>
+			<listener class-name="utilities.ExtenetReport"/>
 			<listener class-name="utilities.RetryListener"/>
 		</listeners>
 		<parameter name = "browser" value = "Chrome"></parameter>
@@ -12,7 +12,7 @@
 	</test>
 	<test name="FirefoxTest">
 		<listeners>
-			<listener class-name="utilities.ExtentReport"/>
+			<listener class-name="utilities.ExtenetReport"/>
 			<listener class-name="utilities.RetryListener"/>
 		</listeners>
 		<parameter name = "browser" value = "firefox"></parameter>

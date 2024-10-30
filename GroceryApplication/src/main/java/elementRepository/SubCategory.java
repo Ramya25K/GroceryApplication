@@ -95,7 +95,6 @@ public class SubCategory {
 		String path = "//table[@class='table table-bordered table-hover table-sm']//tbody//tr[" + row + "]//td["
 				+ column + "]";
 		WebElement element = driver.findElement(By.xpath(path));
-		// System.out.println("Text"+element.getText());
 		return element.getText();
 	}
 

@@ -1,13 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="4" passed="4" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-24T23:30:36 IST" name="GroceryApplication" finished-at="2024-10-24T23:30:46 IST" duration-ms="10575">
+  <suite started-at="2024-10-30T12:00:51 IST" name="GroceryApplication" finished-at="2024-10-30T12:02:05 IST" duration-ms="74789">
     <groups>
+      <group name="smoke">
+        <method signature="LoginPageTest.verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@5b1669c0]" name="verifyLoginWithValidData" class="testCase.LoginPageTest"/>
+        <method signature="SubCategoryTest.verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@15043a2f]" name="verifyNewSubCategory" class="testCase.SubCategoryTest"/>
+        <method signature="LoginPageTest.verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@533bda92]" name="verifyLoginWithValidData" class="testCase.LoginPageTest"/>
+        <method signature="SubCategoryTest.verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@304bb45b]" name="verifyNewSubCategory" class="testCase.SubCategoryTest"/>
+      </group> <!-- smoke -->
     </groups>
-    <test started-at="2024-10-24T23:30:36 IST" name="ChromeTest" finished-at="2024-10-24T23:30:46 IST" duration-ms="10575">
-      <class name="testCase.CategoryPageTest">
-        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.CategoryPageTest@368247b9]" started-at="2024-10-24T23:30:36 IST" name="beforeMethod" finished-at="2024-10-24T23:30:43 IST" duration-ms="7149" status="PASS">
+    <test started-at="2024-10-30T12:00:51 IST" name="ChromeTest" finished-at="2024-10-30T12:01:39 IST" duration-ms="48411">
+      <class name="testCase.SubCategoryTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@15043a2f]" started-at="2024-10-30T12:01:16 IST" name="beforeMethod" finished-at="2024-10-30T12:01:32 IST" duration-ms="15785" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -18,22 +24,108 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method signature="checkForStatus()[pri:0, instance:testCase.CategoryPageTest@368247b9]" started-at="2024-10-24T23:30:43 IST" name="checkForStatus" finished-at="2024-10-24T23:30:46 IST" duration-ms="3146" status="PASS">
+        <test-method signature="verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@15043a2f]" started-at="2024-10-30T12:01:32 IST" name="verifyNewSubCategory" finished-at="2024-10-30T12:01:39 IST" duration-ms="7516" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- checkForStatus -->
-        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.CategoryPageTest@368247b9]" started-at="2024-10-24T23:30:46 IST" name="afterMethode" finished-at="2024-10-24T23:30:46 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- verifyNewSubCategory -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@15043a2f]" started-at="2024-10-30T12:01:39 IST" name="afterMethode" finished-at="2024-10-30T12:01:39 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=checkForStatus status=SUCCESS method=CategoryPageTest.checkForStatus()[pri:0, instance:testCase.CategoryPageTest@368247b9] output={null}]]]>
+                <![CDATA[[TestResult name=verifyNewSubCategory status=SUCCESS method=SubCategoryTest.verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@15043a2f] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethode -->
-      </class> <!-- testCase.CategoryPageTest -->
+      </class> <!-- testCase.SubCategoryTest -->
+      <class name="testCase.LoginPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@5b1669c0]" started-at="2024-10-30T12:00:52 IST" name="beforeMethod" finished-at="2024-10-30T12:01:08 IST" duration-ms="15618" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@5b1669c0]" started-at="2024-10-30T12:01:08 IST" name="verifyLoginWithValidData" finished-at="2024-10-30T12:01:14 IST" duration-ms="5512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@5b1669c0]" started-at="2024-10-30T12:01:16 IST" name="afterMethode" finished-at="2024-10-30T12:01:16 IST" duration-ms="13" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidData status=SUCCESS method=LoginPageTest.verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@5b1669c0] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LoginPageTest -->
     </test> <!-- ChromeTest -->
+    <test started-at="2024-10-30T12:00:51 IST" name="FirefoxTest" finished-at="2024-10-30T12:02:05 IST" duration-ms="74714">
+      <class name="testCase.SubCategoryTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.SubCategoryTest@304bb45b]" started-at="2024-10-30T12:01:27 IST" name="beforeMethod" finished-at="2024-10-30T12:01:58 IST" duration-ms="31033" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@304bb45b]" started-at="2024-10-30T12:01:58 IST" name="verifyNewSubCategory" finished-at="2024-10-30T12:02:05 IST" duration-ms="7400" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNewSubCategory -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.SubCategoryTest@304bb45b]" started-at="2024-10-30T12:02:05 IST" name="afterMethode" finished-at="2024-10-30T12:02:05 IST" duration-ms="2" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyNewSubCategory status=SUCCESS method=SubCategoryTest.verifyNewSubCategory()[pri:0, instance:testCase.SubCategoryTest@304bb45b] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.SubCategoryTest -->
+      <class name="testCase.LoginPageTest">
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:testCase.LoginPageTest@533bda92]" started-at="2024-10-30T12:00:52 IST" name="beforeMethod" finished-at="2024-10-30T12:01:22 IST" duration-ms="30041" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@533bda92]" started-at="2024-10-30T12:01:22 IST" name="verifyLoginWithValidData" finished-at="2024-10-30T12:01:27 IST" duration-ms="4520" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidData -->
+        <test-method is-config="true" signature="afterMethode(org.testng.ITestResult)[pri:0, instance:testCase.LoginPageTest@533bda92]" started-at="2024-10-30T12:01:27 IST" name="afterMethode" finished-at="2024-10-30T12:01:27 IST" duration-ms="3" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLoginWithValidData status=SUCCESS method=LoginPageTest.verifyLoginWithValidData()[pri:0, instance:testCase.LoginPageTest@533bda92] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethode -->
+      </class> <!-- testCase.LoginPageTest -->
+    </test> <!-- FirefoxTest -->
   </suite> <!-- GroceryApplication -->
 </testng-results>

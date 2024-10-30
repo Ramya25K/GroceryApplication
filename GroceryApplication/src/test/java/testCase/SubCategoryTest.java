@@ -19,7 +19,7 @@ public class SubCategoryTest extends BaseClass {
 	String subCatName;
 	String catName;
 
-	@Test
+	@Test(groups="smoke")
 	public void verifyNewSubCategory() {
 		lp = new LoginPage(driver);
 		hp = lp.sendLoginDetails("admin", "admin");

@@ -26,7 +26,7 @@ public class LoginPageTest extends BaseClass{
     }
 	
 	
-	 @Test
+	 @Test(groups="smoke")
   public void verifyLoginWithValidData() throws IOException 
   {
 	  lp = new LoginPage(driver);

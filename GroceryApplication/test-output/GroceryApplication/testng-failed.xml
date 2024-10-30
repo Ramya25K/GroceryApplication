@@ -9,8 +9,8 @@
     <classes>
       <class name="testCase.CategoryPageTest">
         <methods>
-          <include name="checkForStatus"/>
           <include name="afterMethode"/>
+          <include name="EditNewCategory"/>
           <include name="beforeMethod"/>
         </methods>
       </class> <!-- testCase.CategoryPageTest -->

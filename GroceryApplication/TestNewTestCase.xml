@@ -5,7 +5,7 @@
 		</listeners>
 		<parameter name = "browser" value = "Chrome"></parameter>
 		<classes>
-			<class name="testCase.ManageContactPageTest"></class>
+			<class name="testCase.CategoryPageTest"></class>
 		</classes>
 	</test>
 	
