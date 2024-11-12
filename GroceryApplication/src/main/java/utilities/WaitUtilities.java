@@ -21,7 +21,7 @@ public class WaitUtilities {
 		PageFactory.initElements(driver, this);
 	}
 
-	public void fluventWaitElements(WebDriver driver, WebElement element, String attribute, String attributeValue,
+	public void waitElements(WebDriver driver, WebElement element, String attribute, String attributeValue,
 			int total) {
 		Wait<WebDriver> fluentWait = new FluentWait<WebDriver>(driver).withTimeout(Duration.ofSeconds(total))
 				.pollingEvery(Duration.ofSeconds(2)).ignoring(NoSuchElementException.class);
